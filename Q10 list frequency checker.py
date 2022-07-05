@@ -1,5 +1,4 @@
 def frequency(word_list):
-
     word_list.sort()
     frequency_dict = {}
     word_index = 0

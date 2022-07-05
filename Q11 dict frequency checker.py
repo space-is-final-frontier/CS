@@ -7,7 +7,6 @@ def dict_value_list(dictionary):
     return value_list
 
 def frequency(dictionary):
-
     value_list = dict_value_list(dictionary)
     value_list.sort()
     frequency_dict = {}

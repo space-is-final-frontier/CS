@@ -1,30 +1,31 @@
+tries = 0
+
 def login(userid, passwd):
-    success = False
-    tries = 0
+    global tries
 
-    while not success:
+    if userid == 'ADMIN':
 
-        if userid == 'ADMIN':
-
-            if passwd == 'St0rE@1':
-
-                success = True
-
-                print('Login Successful')
-
-                break
-            
-            else:
-                tries += 1
-
+        if passwd == 'St0rE@1':
+            print('Login Successful')
+            return
+        
         else:
             tries += 1
 
+    else:
+        tries += 1
         
-        if tries == 3:
-            print('account blocked')
+    if tries == 3:
+        print('account blocked')
 
+    else:
+        login_input()
 
-userid = input("Please enter your userid: ")
-password = input("Please enter your password: ")
-login(userid, password)
+def login_input():
+    global tries
+    print('Attempt number:', tries + 1)
+    userid = input("Please enter your userid: ")
+    password = input("Please enter your password: ")
+    login(userid, password)
+
+login_input()

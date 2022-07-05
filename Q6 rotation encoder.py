@@ -1,5 +1,4 @@
 def rotate_word(word, shift):
-
     rotated_word = ''
 
     for letter in word:

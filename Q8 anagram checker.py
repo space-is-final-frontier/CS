@@ -1,5 +1,4 @@
 def is_anagram(word1, word2):
-
     sorted1 = sorted(word1)
     sorted2 = sorted(word2)
 

@@ -10,7 +10,6 @@ def LIGHT(colour):
         return 2
 
 def trafficLight():
-
     colour = input("What is the colour of the light? ")
 
     if colour not in ('RED', 'YELLOW', 'GREEN'):
